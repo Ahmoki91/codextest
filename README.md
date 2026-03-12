@@ -1,19 +1,19 @@
-# Codex Launchpad
+# Codex Startplattform
 
-Small static showcase app for demonstrating how quickly Codex can turn a new
-repository into something presentable.
+Kleine statische Demo-App, die zeigt, wie schnell Codex ein neues Repository in
+etwas Vorzeigbares verwandeln kann.
 
-## Run in WSL
+## Start in WSL
 
 ```bash
 cd /home/jens/codextest
 npm start
 ```
 
-Then open `http://localhost:4173`.
+Danach `http://localhost:4173` im Browser oeffnen.
 
-## What is included
+## Enthalten
 
-- A polished single-page landing screen
-- Small interactive demo controls
-- Zero build step and no external packages
+- Eine aufgeraumte Single-Page-Landingpage
+- Kleine interaktive Demo-Steuerung
+- Kein Build-Schritt und keine externen Pakete

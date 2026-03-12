@@ -6,18 +6,18 @@ const runDemoButton = document.querySelector("#runDemo");
 const planList = document.querySelector("#planList");
 
 const modeText = {
-  speed: "Fast end-to-end delivery: scaffold, refine, verify, and hand off.",
-  design: "Intentional presentation: strong layout, custom feel, and demo-ready polish.",
-  clarity: "Clear story arc: the value is obvious even to someone seeing Codex for the first time.",
+  speed: "Schnelle Lieferung von Anfang bis Ende: aufsetzen, verfeinern, pruefen und uebergeben.",
+  design: "Bewusste Praesentation: starkes Layout, individueller Charakter und Demo-reife Ausarbeitung.",
+  clarity: "Klarer Spannungsbogen: der Nutzen ist selbst fuer Menschen sofort sichtbar, die Codex zum ersten Mal sehen.",
 };
 
 const demoLines = [
-  "$ inspect repo",
-  "Empty repository confirmed. Choosing static app architecture.",
-  "$ create app shell",
-  "Landing page, metrics, workbench panels, and reveal motion added.",
-  "$ verify local run path",
-  "Ready to serve inside WSL with Python or any static file server.",
+  "$ repo pruefen",
+  "Leeres Repository bestaetigt. Eine statische App-Architektur wird gewaehlt.",
+  "$ app-grundgeruest erstellen",
+  "Landingpage, Kennzahlen, Workbench-Panels und Reveal-Animationen wurden hinzugefuegt.",
+  "$ lokalen startpfad verifizieren",
+  "Bereit fuer den Start in WSL mit Python oder jedem anderen statischen Dateiserver.",
 ];
 
 chips.forEach((chip) => {
@@ -68,9 +68,9 @@ function playDemo() {
 
   window.setTimeout(() => {
     planList.innerHTML = [
-      '<li class="done">Inspect repo and choose a zero-dependency stack</li>',
-      '<li class="done">Create layout, visuals, and interaction model</li>',
-      '<li class="done">Verify local run path inside WSL</li>'
+      '<li class="done">Repo pruefen und einen Stack ohne Abhaengigkeiten waehlen</li>',
+      '<li class="done">Layout, Visuals und Interaktionsmodell erstellen</li>',
+      '<li class="done">Lokalen Startpfad in WSL verifizieren</li>'
     ].join("");
   }, demoLines.length * 420);
 }
