@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Launchpad</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Codex Showcase App</p>
+          <h1>From empty repo to live concept in one pass.</h1>
+          <p class="lede">
+            A compact demo app that highlights what a coding agent can do:
+            shape a concept, ship a UI, and leave behind something ready to
+            present.
+          </p>
+          <div class="hero-actions">
+            <button class="primary" id="runDemo">Run Demo Sequence</button>
+            <a class="secondary" href="#workbench">Inspect Workbench</a>
+          </div>
+        </div>
+        <section class="hero-card">
+          <div class="terminal-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="terminal-body" id="terminalLog">
+            <p><span class="prompt">$</span> scan repo</p>
+            <p>Repository is empty. Creating a small showcase app.</p>
+            <p><span class="prompt">$</span> design landing experience</p>
+            <p>Applying layout, motion, metrics, and interactive demo blocks.</p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="metrics">
+          <article>
+            <span class="metric-value" data-target="4">0</span>
+            <p>Files created from scratch</p>
+          </article>
+          <article>
+            <span class="metric-value" data-target="3">0</span>
+            <p>Interactive demo modules</p>
+          </article>
+          <article>
+            <span class="metric-value" data-target="15">0</span>
+            <p>Minutes to a presentable result</p>
+          </article>
+        </section>
+
+        <section class="panel-grid" id="workbench">
+          <article class="panel story-panel">
+            <div class="panel-heading">
+              <p class="eyebrow">What This Shows</p>
+              <h2>Codex is useful when momentum matters.</h2>
+            </div>
+            <ul class="story-list">
+              <li>Start from a blank repo and build a coherent first version.</li>
+              <li>Turn vague intent into a tangible UI and narrative.</li>
+              <li>Leave behind code that is easy to extend or restyle.</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Build Focus</p>
+              <h2>Pick a showcase angle.</h2>
+            </div>
+            <div class="chip-row" id="chipRow">
+              <button class="chip active" data-mode="speed">Speed</button>
+              <button class="chip" data-mode="design">Design</button>
+              <button class="chip" data-mode="clarity">Clarity</button>
+            </div>
+            <p class="mode-copy" id="modeCopy">
+              Fast end-to-end delivery: scaffold, refine, verify, and hand off.
+            </p>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Generated Plan</p>
+              <h2>A believable work sequence.</h2>
+            </div>
+            <ol class="plan-list" id="planList">
+              <li class="done">Inspect repo and choose a zero-dependency stack</li>
+              <li class="done">Create layout, visuals, and interaction model</li>
+              <li class="active">Verify local run path inside WSL</li>
+            </ol>
+          </article>
+        </section>
+
+        <section class="showcase-strip">
+          <article class="showcase-card">
+            <p class="eyebrow">Prompt to Product</p>
+            <h3>Readable output</h3>
+            <p>
+              The app is clean enough to present, but small enough to explain in
+              a few minutes.
+            </p>
+          </article>
+          <article class="showcase-card">
+            <p class="eyebrow">No Heavy Setup</p>
+            <h3>Runs locally fast</h3>
+            <p>
+              Static files plus one tiny start script means it is easy to demo in
+              almost any environment.
+            </p>
+          </article>
+          <article class="showcase-card">
+            <p class="eyebrow">Easy Extension</p>
+            <h3>Good handoff point</h3>
+            <p>
+              You can evolve this into a portfolio piece, team demo, or product
+              concept without rewiring the foundation.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

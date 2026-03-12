@@ -1,0 +1,9 @@
+{
+  "name": "codex-launchpad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small static showcase app for demonstrating Codex.",
+  "scripts": {
+    "start": "python3 -m http.server 4173"
+  }
+}
